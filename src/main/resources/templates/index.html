@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API GEMINI</title>
+    <link rel="shortcut icon" href="/img/icon.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 flex items-center justify-center min-h-screen">
+    <div class="absolute top-4 right-4 flex space-x-4">
+        <span class="w-8 h-8 cursor-pointer text-3xl" onclick="changeLanguage('pt')">🇧🇷</span>
+        <span class="w-8 h-8 cursor-pointer text-3xl" onclick="changeLanguage('en')">🇬🇧</span>
+    </div>
+    
+    <div class="bg-white shadow-lg rounded-3xl w-full max-w-5xl h-[80vh] flex overflow-hidden">
+        <div class="w-1/4 bg-gray-100 p-4 border-r border-gray-300">
+            <h1 id="chatbotTitle" style="text-align: center;" class="text-lg font-bold mb-4 text-gray-900">CHATBOT</h1>
+            <hr style="margin-bottom: 10%;">
+            <h2 id="optionsTitle" class="text-lg font-bold mb-4 text-gray-800">Opções</h2>
+            <select id="choosen" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                <option selected value="conversa_normal">Conversa normal</option>
+                <option value="resumir_texto">Resumir texto</option>
+                <option value="correcao_ortografica">Correção ortográfica</option>
+                <option value="gerar_titulo">Gerar título para YouTube</option>
+                <option value="gerar_descricao">Gerar descrição para YouTube</option>
+            </select>
+            <label for="choosen" class="text-sm text-gray-500 mt-2 block">Escolha uma opção</label>
+            <button id="btnClearRes" type="button" class="mt-6 w-full bg-gray-500 text-white py-2 rounded-lg hover:bg-gray-600 transition">
+                Limpar Chat
+            </button>
+            <button id="btnClearReq" type="button" class="mt-6 w-full bg-gray-500 text-white py-2 rounded-lg hover:bg-gray-600 transition">
+                Limpar Input
+            </button>
+        </div>
+
+        <div class="w-3/4 flex flex-col">
+            <div id="chatBox" class="flex-1 p-6 overflow-y-auto bg-gray-50 border-b border-gray-300 rounded-tr-3xl">
+                <div id="resIA" class="text-gray-700 space-y-4"></div>
+            </div>
+            <div class="p-4 bg-white rounded-br-3xl">
+                <textarea id="inptChat" placeholder="Digite aqui..." rows="3" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition resize-none"></textarea>
+                <button id="btnSend" type="button" class="mt-2 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-900 transition">
+                    Enviar request
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
