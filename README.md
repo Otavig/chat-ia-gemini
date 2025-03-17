@@ -1,6 +1,16 @@
-# Chatbot API Gemini 🚀
-
-Welcome to the **Chatbot API Gemini** project! This application is designed to interact with the **Gemini API** and generate content based on user input. Built with **Spring Boot**, it integrates a simple and interactive user interface using **Thymeleaf**, **Tailwind CSS**, and **JavaScript**. The app follows a **monolithic architecture**, where all components are bundled into a single service for simplicity and ease of maintenance.
+<p align="center">
+    <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" align="center" width="30%">
+</p>
+<p align="center"><h1 align="center">CHAT-IA-GEMINI</h1></p>
+<p align="center">
+</p>
+<p align="center">
+	<img src="https://img.shields.io/github/license/Otavig/chat-ia-gemini?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+	<img src="https://img.shields.io/github/last-commit/Otavig/chat-ia-gemini?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/Otavig/chat-ia-gemini?style=default&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/Otavig/chat-ia-gemini?style=default&color=0080ff" alt="repo-language-count">
+</p>
+<br>
 
 ## Table of Contents 📑
 
@@ -13,7 +23,176 @@ Welcome to the **Chatbot API Gemini** project! This application is designed to i
 - [Execution Instructions](#execution-instructions)
 - [License](#license)
 
+---
+
+##  Project Structure
+
+```sh
+└── chat-ia-gemini/
+    ├── README.md
+    ├── mvnw
+    ├── mvnw.cmd
+    ├── pom.xml
+    └── src
+        ├── main
+        └── test
+```
+
+
+###  Project Index
+<details open>
+	<summary><b><code>CHAT-IA-GEMINI/</code></b></summary>
+	<details> <!-- __root__ Submodule -->
+		<summary><b>__root__</b></summary>
+		<blockquote>
+			<table>
+			<tr>
+				<td><b><a href='https://github.com/Otavig/chat-ia-gemini/blob/master/mvnw'>mvnw</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/Otavig/chat-ia-gemini/blob/master/mvnw.cmd'>mvnw.cmd</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			</table>
+		</blockquote>
+	</details>
+	<details> <!-- src Submodule -->
+		<summary><b>src</b></summary>
+		<blockquote>
+			<details>
+				<summary><b>main</b></summary>
+				<blockquote>
+					<details>
+						<summary><b>resources</b></summary>
+						<blockquote>
+							<details>
+								<summary><b>templates</b></summary>
+								<blockquote>
+									<table>
+									<tr>
+										<td><b><a href='https://github.com/Otavig/chat-ia-gemini/blob/master/src/main/resources/templates/index.html'>index.html</a></b></td>
+										<td><code>❯ REPLACE-ME</code></td>
+									</tr>
+									</table>
+								</blockquote>
+							</details>
+						</blockquote>
+					</details>
+					<details>
+						<summary><b>java</b></summary>
+						<blockquote>
+							<details>
+								<summary><b>com</b></summary>
+								<blockquote>
+									<details>
+										<summary><b>ia</b></summary>
+										<blockquote>
+											<details>
+												<summary><b>chat</b></summary>
+												<blockquote>
+													<table>
+													<tr>
+														<td><b><a href='https://github.com/Otavig/chat-ia-gemini/blob/master/src/main/java/com/ia/chat/ChatApplication.java'>ChatApplication.java</a></b></td>
+														<td><code>❯ REPLACE-ME</code></td>
+													</tr>
+													</table>
+													<details>
+														<summary><b>model</b></summary>
+														<blockquote>
+															<table>
+															<tr>
+																<td><b><a href='https://github.com/Otavig/chat-ia-gemini/blob/master/src/main/java/com/ia/chat/model/MsgModel.java'>MsgModel.java</a></b></td>
+																<td><code>❯ REPLACE-ME</code></td>
+															</tr>
+															</table>
+														</blockquote>
+													</details>
+													<details>
+														<summary><b>config</b></summary>
+														<blockquote>
+															<table>
+															<tr>
+																<td><b><a href='https://github.com/Otavig/chat-ia-gemini/blob/master/src/main/java/com/ia/chat/config/WebClientConfig.java'>WebClientConfig.java</a></b></td>
+																<td><code>❯ REPLACE-ME</code></td>
+															</tr>
+															</table>
+														</blockquote>
+													</details>
+													<details>
+														<summary><b>controllers</b></summary>
+														<blockquote>
+															<table>
+															<tr>
+																<td><b><a href='https://github.com/Otavig/chat-ia-gemini/blob/master/src/main/java/com/ia/chat/controllers/StaticController.java'>StaticController.java</a></b></td>
+																<td><code>❯ REPLACE-ME</code></td>
+															</tr>
+															<tr>
+																<td><b><a href='https://github.com/Otavig/chat-ia-gemini/blob/master/src/main/java/com/ia/chat/controllers/ChatController.java'>ChatController.java</a></b></td>
+																<td><code>❯ REPLACE-ME</code></td>
+															</tr>
+															</table>
+														</blockquote>
+													</details>
+													<details>
+														<summary><b>service</b></summary>
+														<blockquote>
+															<table>
+															<tr>
+																<td><b><a href='https://github.com/Otavig/chat-ia-gemini/blob/master/src/main/java/com/ia/chat/service/ChatService.java'>ChatService.java</a></b></td>
+																<td><code>❯ REPLACE-ME</code></td>
+															</tr>
+															</table>
+														</blockquote>
+													</details>
+												</blockquote>
+											</details>
+										</blockquote>
+									</details>
+								</blockquote>
+							</details>
+						</blockquote>
+					</details>
+				</blockquote>
+			</details>
+			<details>
+				<summary><b>test</b></summary>
+				<blockquote>
+					<details>
+						<summary><b>java</b></summary>
+						<blockquote>
+							<details>
+								<summary><b>com</b></summary>
+								<blockquote>
+									<details>
+										<summary><b>ia</b></summary>
+										<blockquote>
+											<details>
+												<summary><b>chat</b></summary>
+												<blockquote>
+													<table>
+													<tr>
+														<td><b><a href='https://github.com/Otavig/chat-ia-gemini/blob/master/src/test/java/com/ia/chat/ChatApplicationTests.java'>ChatApplicationTests.java</a></b></td>
+														<td><code>❯ REPLACE-ME</code></td>
+													</tr>
+													</table>
+												</blockquote>
+											</details>
+										</blockquote>
+									</details>
+								</blockquote>
+							</details>
+						</blockquote>
+					</details>
+				</blockquote>
+			</details>
+		</blockquote>
+	</details>
+</details>
+
+
 ## Overview 📝
+Welcome to the **Chatbot API Gemini** project! This application is designed to interact with the **Gemini API** and generate content based on user input. Built with **Spring Boot**, it integrates a simple and interactive user interface using **Thymeleaf**, **Tailwind CSS**, and **JavaScript**. The app follows a **monolithic architecture**, where all components are bundled into a single service for simplicity and ease of maintenance.
 
 This project aims to create a **chatbot** that connects to the **Gemini API** to generate responses. Users can interact with the bot via a simple web interface. The chatbot offers multiple functionalities, such as:
 
